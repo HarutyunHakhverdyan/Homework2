@@ -1,7 +1,6 @@
 //1 Given an array of numbers which is almost sorted in ascending order.  Find the index
 //where sorting order is violated.
 
-/*
 function checkArr(newArr){
     let index
 function check(el,i,arr){
@@ -88,15 +87,14 @@ function sumDigits(num){
 };
 let num1=+prompt()
 let result1=sumDigits(num1);
-console.log(result1)*/
+console.log(result1)
 
 //5. Write a recursive function which receives  a number as arguments and returns the
 //fibonacci sequence as array.
+
 function newArr(n){
 let arr=[]
-function numFibonacci(num){;
-    debugger
-    
+function numFibonacci(num){;    
     if(num>0){
         if(arr[0]==undefined||arr[1]==undefined){
             arr.push(1);
@@ -105,12 +103,11 @@ function numFibonacci(num){;
         }else{
         arr.push(arr[arr.length-1]+arr[arr.length-2]);
         numFibonacci(num-1)
-     }
+      }
     }
  }
  numFibonacci(n)
  return arr
 };
-
 let result=newArr(20);
 console.log(result)
